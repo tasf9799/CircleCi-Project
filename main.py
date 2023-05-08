@@ -1,15 +1,10 @@
-def to_upper(name):
-    return name.upper()
+# Taking kilometers input from the user
+kilometers = float(input("Enter value in kilometers: "))
 
+# conversion factor
+conv_fac = 0.621371
 
-def say_hello(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hello, {name}')  # Press ⌘F8 to toggle the breakpoint.
+# calculate miles
+miles = kilometers * conv_fac
+print('%0.2f kilometers is equal to %0.2f miles' %(kilometers,miles))
 
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    name = 'TauseefShaikh'
-    say_hello(name)
-    up = to_upper(name)
-    print(up)
